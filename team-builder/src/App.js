@@ -8,9 +8,9 @@ function App() {
   const [team, setTeam] = useState([
     {
       id: 1,
-      name: "",
-      email: "",
-      role: ""
+      name: "John",
+      email: "john@email.com",
+      role: "frontend"
     }
   ]);
 
@@ -25,7 +25,7 @@ function App() {
   };
   
   return (
-    <div>
+    <div className="App">
        <h1>My Team</h1>
        <TeamForm addNewTeam={addNewTeam}/>
        <Team team={team}/>
