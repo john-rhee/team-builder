@@ -54,11 +54,11 @@ const TeamForm = props => {
         <button type="submit">Add New Team</button>
 
 
-        //Practice
+        {/* //Practice// */}
 
         
 
-        <br></br>
+        {/* <br></br>
         <label htmlFor="inputlabel">Enter Here!</label>
         <input type="text" id="inputlabel" onChange={event=>{setTesting(event.target.value);}}>
         </input>
@@ -71,9 +71,9 @@ const TeamForm = props => {
         <label htmlFor="checkboxlabel">Check Here!</label>
         <input type="checkbox" id="checkboxlabel"/>
 
-        <input type="submit" />
+        <input type="submit" /> */}
 
-        <h3>This is {testing}</h3>
+        <h3>MEMBER LIST {testing}</h3>
 
       </form>
     );

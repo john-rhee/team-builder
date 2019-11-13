@@ -8,9 +8,9 @@ function App() {
   const [team, setTeam] = useState([
     {
       id: 1,
-      name: "John",
-      email: "john@email.com",
-      role: "frontend"
+      name: "",
+      email: "",
+      role: ""
     }
   ]);
 
