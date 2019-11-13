@@ -4,9 +4,9 @@ const TeamForm = props => {
 
     const [team, setTeam] = useState({ name: "", type: "", role: "" });
 
-
-    const handleChanges = e => {
-        setTeam({ ...team, [e.target.name]: e.target.value });
+    
+    const handleChanges = event => {
+        setTeam({ ...team, [event.target.name]: event.target.value });
     };
 
     const submitForm = e => {
@@ -15,6 +15,9 @@ const TeamForm = props => {
         setTeam({ name: "", type: "", role: "" });
       };
 
+
+    //Practice
+    const [testing, setTesting] = useState("");
 
     return (
       <form onSubmit={submitForm}>
@@ -49,6 +52,28 @@ const TeamForm = props => {
         </input>
         <br></br>
         <button type="submit">Add New Team</button>
+
+
+        //Practice
+
+        
+
+        <br></br>
+        <label htmlFor="inputlabel">Enter Here!</label>
+        <input type="text" id="inputlabel" onChange={event=>{setTesting(event.target.value);}}>
+        </input>
+        <select id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+
+        <label htmlFor="checkboxlabel">Check Here!</label>
+        <input type="checkbox" id="checkboxlabel"/>
+
+        <input type="submit" />
+
+        <h3>This is {testing}</h3>
 
       </form>
     );
